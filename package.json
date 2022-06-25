@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "animate.css": "^4.1.1",
+    "framer-motion": "^6.3.11",
+    "gsap": "^3.10.4",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-animation-on-scroll": "^5.1.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "scrollmagic": "^2.0.8"
   },
   "devDependencies": {
     "eslint": "8.18.0",
