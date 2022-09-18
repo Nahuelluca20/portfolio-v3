@@ -1,10 +1,10 @@
-import '../styles/globals.css'
-import '../styles/animations.css'
-import Nav from "../components/nav"
-import Head from 'next/head'
-import { ChakraProvider } from '@chakra-ui/react'
-import customTheme from "../theme"
-
+import React from 'react';
+import '../styles/globals.css';
+import '../styles/animations.css';
+import Head from 'next/head';
+import { ChakraProvider } from '@chakra-ui/react';
+import Nav from '../components/nav';
+import customTheme from '../theme';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       <Nav />
       <Component {...pageProps} />
     </ChakraProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

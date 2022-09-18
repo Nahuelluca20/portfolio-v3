@@ -3,10 +3,14 @@ import { FiGithub } from "react-icons/fi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 
-
 function Footer() {
   return (
-    <Stack position={{lg: "fixed"}} bottom={{lg: "0"}} left={{lg: "8"}} className="fade-in">
+    <Stack
+      position={{ lg: "fixed" }}
+      bottom={{ lg: "0" }}
+      left={{ lg: "8" }}
+      className="fade-in "
+    >
       <Flex
         px={20}
         py={5}

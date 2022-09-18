@@ -21,7 +21,7 @@ function Projects() {
       title: "Easy Bank",
       text: `Easybank home page. Front End Mentor Challenge. Web page made with SCSS, HTML and JavaScript.`,
       githubLink: "https://github.com/Nahuelluca20/easy-bank-landingPage",
-      deployLink: "https://nahuelluca20.github.io/easy-bank-landingPage/",
+      deployLink: "https://easy-bank-landing-page2.netlify.app/",
       technologies: "JavaScript SCSS HTML GitHub",
       direction: false,
       img: Img2,
