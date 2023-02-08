@@ -5,12 +5,16 @@ import {
   Grid,
   GridItem,
   Link,
+  Box,
   Image as ChakraImage,
 } from "@chakra-ui/react";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import SectionHeader from "./sectionHeader";
 import "animate.css/animate.min.css";
+import Image from "next/image";
+import Foto from "../public/files/yo.png"
+
 
 function About() {
   const technologies = [
@@ -24,7 +28,7 @@ function About() {
 
   return (
     <Stack id="about">
-      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>
+      {/* <AnimationOnScroll animateIn="animate__fadeIn" animateOnce> */}
         <SectionHeader number="01." title="About Me" />
         <Grid rowGap="50px" gridTemplateColumns={{ lg: "repeat(2, 1fr)" }}>
           <GridItem>
@@ -66,15 +70,14 @@ function About() {
             </Grid>
           </GridItem>
           <GridItem justifySelf="center">
+            <Box width={{ base: "227px", lg: "400px" }}
+              height={{ base: "227px", lg: "400px" }}>
+              <Image src={Foto} alt={"foto nahuel luca"} width="100%" height={"100%"} layout="responsive" />
+            </Box>
             {/* <Image src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif" width="500px" height="500px"/> */}
-            <ChakraImage
-              src="https://media-exp1.licdn.com/dms/image/C4D03AQEeHc1k2gXo6w/profile-displayphoto-shrink_800_800/0/1652651141646?e=1669248000&v=beta&t=baZRvD_Aej9Jed_iXKYqR2sYrucBcBSboUGDQqxtyFU"
-              width={{ base: "227px", lg: "400px" }}
-              height={{ base: "227px", lg: "400px" }}
-            />
           </GridItem>
         </Grid>
-      </AnimationOnScroll>
+      {/* </AnimationOnScroll> */}
     </Stack>
   );
 }

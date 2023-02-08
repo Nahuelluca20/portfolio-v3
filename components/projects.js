@@ -1,6 +1,7 @@
 import SectionHeader from "./sectionHeader";
 import CardProjects from "./cardProjects";
 import { Stack, Grid, GridItem } from "@chakra-ui/react";
+import Img0 from "../public/files/pinterest.png";
 import Img1 from "../public/files/aerolab.png";
 import Img2 from "../public/files/bank.png";
 import Img3 from "../public/files/flags.png";
@@ -8,6 +9,15 @@ import Img4 from "../public/files/ip.png";
 
 function Projects() {
   const projects = [
+    {
+      title: "Pinterest Clone",
+      text: `Made with NextsJS, ChakraUI, Axios in the FrontEnd and with NodeJS, ExpressJS, Mongoose and MongoAtlas in the Backend. You can upload images with a title, see them and comment on them.`,
+      githubLink: "https://github.com/Nahuelluca20/pinterest-clone",
+      deployLink: "https://pinterest-clone-topaz.vercel.app/",
+      technologies: "Nextjs TypeScript ChakraUI API Vercel",
+      direction: false,
+      img: Img0,
+    },
     {
       title: "Aerolab Challenge",
       text: `This project is a challenge of the company Aerolab where products are obtained from an API and can be purchased with coins on the web.`,
