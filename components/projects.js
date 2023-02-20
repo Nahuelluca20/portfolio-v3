@@ -1,11 +1,13 @@
-import SectionHeader from "./sectionHeader";
-import CardProjects from "./cardProjects";
-import { Stack, Grid, GridItem } from "@chakra-ui/react";
+import {Stack, Grid, GridItem} from "@chakra-ui/react";
+
 import Img0 from "../public/files/pinterest.png";
 import Img1 from "../public/files/aerolab.png";
 import Img2 from "../public/files/bank.png";
 import Img3 from "../public/files/flags.png";
-import Img4 from "../public/files/ip.png";
+import Img4 from "../public/files/space.png";
+
+import CardProjects from "./cardProjects";
+import SectionHeader from "./sectionHeader";
 
 function Projects() {
   const projects = [
@@ -38,37 +40,38 @@ function Projects() {
     },
     {
       title: "React Flag API",
+      text: `Made with HTML, CSS and Javascript. This page is a challenge from FrontendMentor`,
+      githubLink: "https://github.com/Nahuelluca20/space-tourism-website",
+      deployLink: "https://space-tourismwebsite.netlify.app/index.html",
+      technologies: "HTML, CSS, Javascrip",
+      direction: true,
+      img: Img4,
+    },
+    {
+      title: "React Flag API",
       text: `Made with ReactJS, Redux and Styled-Components, this website consumes data from a flags API to be able to search for different countries in the world.`,
       githubLink: "https://github.com/Nahuelluca20/react-flag-API",
       deployLink: "https://react-flag-api.netlify.app/",
       technologies: "ReactJS Styled-Components API GitHub Redux",
-      direction: true,
+      direction: false,
       img: Img3,
     },
-    {
-      title: "IP Address Tracker",
-      text: `Track some IP with a Geolocation API and then show it on the map. Website made with JavaScript, HTML and CSS.`,
-      githubLink: "https://github.com/Nahuelluca20/ip-address-tracker",
-      deployLink: "https://ip-addresstracker-reactjs.netlify.app/",
-      technologies: "JavaScript HTML CSS API GitHub",
-      direction: false,
-      img: Img4,
-    },
   ];
+
   return (
     <Stack id="projects">
       <SectionHeader number="02." title="Projects " />
-      <Grid rowGap={{ base: "25px", lg: "150px" }} py={10}>
+      <Grid py={10} rowGap={{base: "25px", lg: "150px"}}>
         {projects.map((item) => (
           <GridItem key={item.title}>
             <CardProjects
-              title={item.title}
-              text={item.text}
-              githubLink={item.githubLink}
               deployLink={item.deployLink}
-              technologies={item.technologies}
               direction={item.direction}
+              githubLink={item.githubLink}
               img={item.img}
+              technologies={item.technologies}
+              text={item.text}
+              title={item.title}
             />
           </GridItem>
         ))}
