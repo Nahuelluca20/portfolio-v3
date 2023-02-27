@@ -5,6 +5,7 @@ import Img1 from "../public/files/aerolab.png";
 import Img2 from "../public/files/bank.png";
 import Img3 from "../public/files/flags.png";
 import Img4 from "../public/files/space.png";
+import Img5 from "../public/files/pokedux.png";
 
 import CardProjects from "./cardProjects";
 import SectionHeader from "./sectionHeader";
@@ -30,12 +31,21 @@ function Projects() {
       img: Img1,
     },
     {
+      title: "Pokedux",
+      text: `Usando Redux para manejar el estado este proyecto consume la API de pokemons, puedes guardarlos en favoritos y buscarlos.`,
+      githubLink: "https://github.com/Nahuelluca20/pokedux",
+      deployLink: "https://pokedux-web.netlify.app/",
+      technologies: "ReactJS CSS API GitHub Redux Redux-toolkit",
+      direction: false,
+      img: Img5,
+    },
+    {
       title: "Easy Bank",
       text: `Easybank home page. Front End Mentor Challenge. Web page made with SCSS, HTML and JavaScript.`,
       githubLink: "https://github.com/Nahuelluca20/easy-bank-landingPage",
       deployLink: "https://easy-bank-landing-page2.netlify.app/",
       technologies: "JavaScript SCSS HTML GitHub",
-      direction: false,
+      direction: true,
       img: Img2,
     },
     {
@@ -44,7 +54,7 @@ function Projects() {
       githubLink: "https://github.com/Nahuelluca20/space-tourism-website",
       deployLink: "https://space-tourismwebsite.netlify.app/index.html",
       technologies: "HTML, CSS, Javascrip",
-      direction: true,
+      direction: false,
       img: Img4,
     },
     {
@@ -53,7 +63,7 @@ function Projects() {
       githubLink: "https://github.com/Nahuelluca20/react-flag-API",
       deployLink: "https://react-flag-api.netlify.app/",
       technologies: "ReactJS Styled-Components API GitHub Redux",
-      direction: false,
+      direction: true,
       img: Img3,
     },
   ];
