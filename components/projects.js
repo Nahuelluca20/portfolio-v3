@@ -6,12 +6,22 @@ import Img2 from "../public/files/bank.png";
 import Img3 from "../public/files/flags.png";
 import Img4 from "../public/files/space.png";
 import Img5 from "../public/files/pokedux.png";
+import Img6 from "../public/files/keep.png";
 
 import CardProjects from "./cardProjects";
 import SectionHeader from "./sectionHeader";
 
 function Projects() {
   const projects = [
+    {
+      title: "Google Keep Clone",
+      text: `Made with NextsJS, ChakraUI, Axios in the Frontend, NestJS, Mongoose and MongoAtlas in the Backend. Aun esta en desarrollo, pero se puede subir y borrar notas agregar,editar y borrar tags`,
+      githubLink: "https://github.com/Nahuelluca20/google-keep-clone",
+      deployLink: "https://keep-nahuel.netlify.app/",
+      technologies: "Nextjs TypeScript ChakraUI API NestJS Mongoose MongoDB",
+      direction: true,
+      img: Img6,
+    },
     {
       title: "Pinterest Clone",
       text: `Made with NextsJS, ChakraUI, Axios in the FrontEnd and with NodeJS, ExpressJS, Mongoose and MongoAtlas in the Backend. You can upload images with a title, see them and comment on them.`,
